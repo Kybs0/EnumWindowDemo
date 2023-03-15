@@ -1,0 +1,19 @@
+﻿<Window x:Class="EnumWindowInptrDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnumWindowInptrDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="WindowsTextBlock" TextWrapping="Wrap"/>
+        <Button x:Name="AllWindowsButton" Grid.Row="1" Click="AllWindowsButton_OnClick" HorizontalAlignment="Center" Content="获取所有窗口信息"/>
+        <Button Grid.Row="2" Click="ButtonBase_OnClick" HorizontalAlignment="Center" Content="获取上方窗口信息"/>
+    </Grid>
+</Window>
